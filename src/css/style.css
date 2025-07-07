@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #e6d9e5;
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image{
+    align-items: center;
+}
+
+.image > img{
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+}
+
+.main-content{
+    display: flex;
+    background-color: #fff;
+    width: 800px;
+    height: 600px;
+    border-radius: 10px;
+}
+
+.content{
+    padding: 30px;
+}
+
+.content-perfume{
+    font-size: 14px;
+    letter-spacing: 10px;
+    color: #838383;
+    padding-bottom: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+.content-title{
+    font-size: 46px;
+    line-height: 50px;
+    font-family: "Fraunces", serif;
+    padding-bottom: 30px;
+}
+
+.content-text{
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+    color: #838383;
+}
+
+.content-prices{
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content-price{
+    font-size: 40px;
+    font-family: "Fraunces", serif;
+    color: #3c8067;
+}
+
+.content-old-price{
+    color: #838383;
+}
+
+.btn{
+    background-color:#3c8067;
+    cursor: pointer;
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn > span{
+    color: #fff;
+}
+
+.btn:hover{
+    background-color: #1b4133;
+}
+
+@media (max-width: 767px){
+    .main-content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: auto;
+        margin-top: 200px;
+    }
+    .img-desktop{
+        display: none;
+    }
+    .img-mobile{
+        width: 100%;
+     }
+    .image > img{
+        border-radius: 10px 10px 0 0;
+    }
+    .content-title{
+        font-size: 32px;
+        line-height: 35px;
+    }
+    .btn{
+        width: 90%;
+        padding: 15px;
+    }
+}
+@media (min-width: 768px){
+    .img-mobile{
+        display: none;
+    }
+}
